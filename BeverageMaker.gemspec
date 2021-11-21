@@ -3,20 +3,20 @@ require_relative 'lib/BeverageMaker/version'
 Gem::Specification.new do |spec|
   spec.name          = "BeverageMaker"
   spec.version       = BeverageMaker::VERSION
-  spec.authors       = ["baocq"]
-  spec.email         = ["baocq@fenbi.com"]
+  spec.authors       = ["baochuquan"]
+  spec.email         = ["baochuquan@163.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Beverage Maker"
+  spec.description   = "A Command Line Tool Example"
+  spec.homepage      = "https://github.com/baochuquan/BeverageMaker"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+  spec.metadata["allowed_push_host"] = "https://github.com/baochuquan/BeverageMaker"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = "https://github.com/baochuquan/BeverageMaker"
+  spec.metadata["changelog_uri"] = "https://github.com/baochuquan/BeverageMaker"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -26,4 +26,6 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  spec.add_dependency 'claide', '~> 1.0.3'
 end
