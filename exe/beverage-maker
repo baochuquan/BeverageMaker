@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'BeverageMaker'
+
+BeverageMaker::Command.run(ARGV)
+# BeverageMaker::Command.run(["tea", "oolong", "--iced", "--no-milk"])
+# print"\n"
+# BeverageMaker::Command.run(["coffee", "ca-phe-sua-da", "--sweetener=sugar"])
